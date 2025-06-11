@@ -6,10 +6,11 @@ This project is an open-ended design assignment for the course *Programming Lang
 
 The assignment progresses through the full language design and implementation cycle:
 
-1. **Lexical Analysis** (OCaml-Lex)
-2. **Parsing and Grammar Design** (OCaml-Yacc)
-3. **Abstract Syntax Tree (AST) Construction**
-4. **Interpreter Implementation**
+1. **Lexical Analysis** (OCaml-Lex)[Tokenzier Written in the file :- "lexer.mll" and "token.ml"]
+2. **Parsing and Grammar Design** (OCaml-Yacc)[Parser can be found in the file :- "parser.mly"]
+3. **Type Checker**[Type-Checker can be found in the file:- "type_checker.ml"]
+4. **Abstract Syntax Tree (AST) Construction**
+5. **Interpreter Implementation**[Interpreter can be found in the file :- "eval.ml"]
 
 ---
 
@@ -74,7 +75,6 @@ The interpreter gracefully handles:
 * Runtime errors (e.g., out-of-bound accesses, mismatched dimensions)
 * Syntax errors (from parser/lexer)
 
-All new code introduced in this part is clearly marked and integrated with the earlier modules.
 
 ---
 
@@ -97,7 +97,7 @@ The project includes:
 * Syntax errors
 * Runtime failures (e.g., division by zero, shape mismatch)
 
-These tests are essential to ensure robustness and correctness of the interpreter.
+These tests are essential to ensure robustness and correctness of the interpreter and this testing is done and can be found in the file named "main.ml".
 
 ---
 
@@ -110,19 +110,7 @@ These tests are essential to ensure robustness and correctness of the interprete
 * OCaml
 * OCamlLex and OCamlYacc
 
-### Compile
-
-```bash
-make
-```
-
-### Run Interpreter
-
-```bash
-./interpreter program.dsl
-```
-
----
+Download this zip folder and run the commands written in the file "running_instructions.txt".
 
 ## Notes
 
