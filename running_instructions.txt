@@ -1,0 +1,2 @@
+ocamlc -o main.exe token.cmo ast.cmo parser.cmo lexer.cmo type_checker.ml eval.cmo main.ml
+./main.exe

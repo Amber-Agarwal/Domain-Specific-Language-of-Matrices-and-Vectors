@@ -1,0 +1,71 @@
+exception UnclosedComment
+
+type token = 
+| INT_L of int 
+| FLOAT_L of float 
+| VECTOR_LIT of string
+| MATRIX_LIT of string 
+| TRUE
+| FALSE
+| VARIABLE of string
+| VECTOR  
+| MATRIX 
+| CREATE
+| DIMENSION
+| IS_ZERO 
+| UNIT 
+| SCALE 
+| ADDV 
+| EQ
+| DOT_PROD 
+| INV 
+| LENGTH 
+| ANGLE 
+| ROWSHIFT 
+| ROWSUBTRACT
+| INPUT
+| PRINT_FILE
+| PLUS
+| MINUS
+| MULT
+| DIV
+| MOD
+| LT 
+| GT
+| LTE 
+| GTE
+| ASSIGN
+| SEMI
+| IF
+| THEN
+| ELSE
+| FOR
+| TO
+| WHILE
+| LCURLY
+| RCURLY
+| LSQUARE
+| RSQUARE
+| COMMA 
+| LCURVED
+| RCURVED
+| NOTEQ
+| NOT 
+| OR 
+| EOF
+| AND
+| NUM_ROWS
+| NUM_COLS
+| CREATE_MATRIX
+| MATRIX_ADD 
+| MATRIX_TRANSPOSE 
+| MATRIX_DETERMINANT 
+| MATRIX_SCAL_MULT
+|  MATRIX_MINOR
+| MATRIX_MULTIPLY
+| RAISE 
+| ERROR 
+| POWER
+| UPDATE_MATRIX
+
+
