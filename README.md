@@ -1,1 +1,1 @@
-# Domain-Specific-Language-of-Matrices-and-Vectors
+# Domain-Specific-Language-of-Matrix-and-Vectors
